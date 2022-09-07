@@ -1,0 +1,88 @@
+.about {
+  width: 100%;
+  text-align: center;
+  padding: 48px 16px;
+  background-color: #000;
+}
+
+.about h2 {
+  margin: 16px 0;
+  color: #f8f8f8;
+}
+
+.about .container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.about .container > p {
+  margin: 16px 0 48px 0;
+  font-size: 19.2px;
+  color: #f8f8f8;
+}
+
+.about .card__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 16px;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.about .card {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 390px;
+  padding: 48px 32px;
+  border: 1px solid #e7e8ea;
+  text-align: left;
+  border-radius: 24px;
+  margin: auto;
+  background-color: #000;
+}
+.about .card:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.about .card h3 {
+  margin: 16px 0;
+  color: #f8f8f8;
+}
+
+.about .card p {
+  color: #ccc;
+}
+
+.about .icon__container {
+  background-color: var(--primary-blue);
+  border-radius: 50px;
+  display: inline-flex;
+  padding: 1rem;
+}
+
+.about .icon {
+  font-size: 32px;
+  color: #333;
+}
+
+.about .btn {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+/*=======================================  (MEDIUM DEVICES) ==========================*/
+
+@media screen and (max-width: 940px) {
+  .about .card__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*=======================================  (SMALL DEVICES) ==========================*/
+
+@media screen and (max-width: 495px) {
+  .about .card__container {
+    grid-template-columns: 1fr;
+  }
+}
