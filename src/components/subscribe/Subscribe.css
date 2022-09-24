@@ -58,4 +58,8 @@
   .subscribe .display-col {
     flex-direction: column;
   }
+
+  .subscribe input {
+    margin-bottom: 15px;
+  }
 }
